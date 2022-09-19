@@ -3,6 +3,6 @@ a<#import "parts/common.ftlh" as c>
 
 <@c.page>
 Add new user
-${message!" " }
+${message?ifExists }
 <@l.login "/registration" />
 </@c.page>
